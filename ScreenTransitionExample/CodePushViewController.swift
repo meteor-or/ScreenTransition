@@ -14,4 +14,7 @@ class CodePushViewController: UIViewController {
 
     }
     
+    @IBAction func tabBackButton(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true);
+    }
 }
