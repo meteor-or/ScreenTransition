@@ -15,6 +15,7 @@
 		4EA4DB9F285C2E8F0066FF67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EA4DB9D285C2E8F0066FF67 /* LaunchScreen.storyboard */; };
 		4EA4DBA7285EE70F0066FF67 /* suguePushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA4DBA6285EE70F0066FF67 /* suguePushViewController.swift */; };
 		4EA4DBAB285EEAB80066FF67 /* suguePresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA4DBAA285EEAB80066FF67 /* suguePresentViewController.swift */; };
+		4EA4DBAD285F1BF00066FF67 /* CodePushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA4DBAC285F1BF00066FF67 /* CodePushViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		4EA4DBA0285C2E8F0066FF67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EA4DBA6285EE70F0066FF67 /* suguePushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = suguePushViewController.swift; sourceTree = "<group>"; };
 		4EA4DBAA285EEAB80066FF67 /* suguePresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = suguePresentViewController.swift; sourceTree = "<group>"; };
+		4EA4DBAC285F1BF00066FF67 /* CodePushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodePushViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				4EA4DBA0285C2E8F0066FF67 /* Info.plist */,
 				4EA4DBA6285EE70F0066FF67 /* suguePushViewController.swift */,
 				4EA4DBAA285EEAB80066FF67 /* suguePresentViewController.swift */,
+				4EA4DBAC285F1BF00066FF67 /* CodePushViewController.swift */,
 			);
 			path = ScreenTransitionExample;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EA4DBA7285EE70F0066FF67 /* suguePushViewController.swift in Sources */,
+				4EA4DBAD285F1BF00066FF67 /* CodePushViewController.swift in Sources */,
 				4EA4DB97285C2E8D0066FF67 /* ViewController.swift in Sources */,
 				4EA4DBAB285EEAB80066FF67 /* suguePresentViewController.swift in Sources */,
 				4EA4DB93285C2E8D0066FF67 /* AppDelegate.swift in Sources */,
