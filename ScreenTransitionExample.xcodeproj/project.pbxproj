@@ -13,6 +13,7 @@
 		4EA4DB9A285C2E8D0066FF67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EA4DB98285C2E8D0066FF67 /* Main.storyboard */; };
 		4EA4DB9C285C2E8F0066FF67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EA4DB9B285C2E8F0066FF67 /* Assets.xcassets */; };
 		4EA4DB9F285C2E8F0066FF67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EA4DB9D285C2E8F0066FF67 /* LaunchScreen.storyboard */; };
+		4EA4DBA7285EE70F0066FF67 /* suguePushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA4DBA6285EE70F0066FF67 /* suguePushViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4EA4DB9B285C2E8F0066FF67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EA4DB9E285C2E8F0066FF67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4EA4DBA0285C2E8F0066FF67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EA4DBA6285EE70F0066FF67 /* suguePushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = suguePushViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				4EA4DB9B285C2E8F0066FF67 /* Assets.xcassets */,
 				4EA4DB9D285C2E8F0066FF67 /* LaunchScreen.storyboard */,
 				4EA4DBA0285C2E8F0066FF67 /* Info.plist */,
+				4EA4DBA6285EE70F0066FF67 /* suguePushViewController.swift */,
 			);
 			path = ScreenTransitionExample;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EA4DBA7285EE70F0066FF67 /* suguePushViewController.swift in Sources */,
 				4EA4DB97285C2E8D0066FF67 /* ViewController.swift in Sources */,
 				4EA4DB93285C2E8D0066FF67 /* AppDelegate.swift in Sources */,
 				4EA4DB95285C2E8D0066FF67 /* SceneDelegate.swift in Sources */,
