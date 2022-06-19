@@ -26,19 +26,25 @@ class ViewController: UIViewController {
         print("ViewController 뷰가 사라질 것이다.")
     }
     override func viewDidDisappear(_ animated: Bool) {
-        <#code#>
         super.viewWillAppear(animated)
         print("ViewController 뷰가 사라졌다.")
     }
     @IBAction func tabCodePushButton(_ sender: UIButton) {
-        guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "CodePushViewController") else {return}
+        guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "CodePushViewController") as? CodePushViewController else {return}
+        
+        viewController.name = "유성"
+        
         self.navigationController?.pushViewController( viewController, animated: true)
     }
     @IBAction func tabCodePresentButton(_ sender: UIButton) {
-        guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "codePresentViewController") else {
+        // as? 작업하면 해당 컨트롤러에 있는 상수에 접근할 수 있다.
+        guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "codePresentViewController") as? codePresentViewController else {
             return
         }
         viewController.modalPresentationStyle = .fullScreen
+        
+        viewController.name = "유성"
+        
         self.present(viewController, animated: true)
     }
     
