@@ -16,6 +16,7 @@
 		4EA4DBA7285EE70F0066FF67 /* suguePushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA4DBA6285EE70F0066FF67 /* suguePushViewController.swift */; };
 		4EA4DBAB285EEAB80066FF67 /* suguePresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA4DBAA285EEAB80066FF67 /* suguePresentViewController.swift */; };
 		4EA4DBAD285F1BF00066FF67 /* CodePushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA4DBAC285F1BF00066FF67 /* CodePushViewController.swift */; };
+		4EA4DBAF285F1EBA0066FF67 /* codePresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA4DBAE285F1EBA0066FF67 /* codePresentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		4EA4DBA6285EE70F0066FF67 /* suguePushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = suguePushViewController.swift; sourceTree = "<group>"; };
 		4EA4DBAA285EEAB80066FF67 /* suguePresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = suguePresentViewController.swift; sourceTree = "<group>"; };
 		4EA4DBAC285F1BF00066FF67 /* CodePushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodePushViewController.swift; sourceTree = "<group>"; };
+		4EA4DBAE285F1EBA0066FF67 /* codePresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = codePresentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				4EA4DBA6285EE70F0066FF67 /* suguePushViewController.swift */,
 				4EA4DBAA285EEAB80066FF67 /* suguePresentViewController.swift */,
 				4EA4DBAC285F1BF00066FF67 /* CodePushViewController.swift */,
+				4EA4DBAE285F1EBA0066FF67 /* codePresentViewController.swift */,
 			);
 			path = ScreenTransitionExample;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EA4DBAF285F1EBA0066FF67 /* codePresentViewController.swift in Sources */,
 				4EA4DBA7285EE70F0066FF67 /* suguePushViewController.swift in Sources */,
 				4EA4DBAD285F1BF00066FF67 /* CodePushViewController.swift in Sources */,
 				4EA4DB97285C2E8D0066FF67 /* ViewController.swift in Sources */,
