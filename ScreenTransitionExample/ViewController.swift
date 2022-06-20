@@ -10,7 +10,6 @@ import UIKit
 class ViewController: UIViewController, sendDataDelegate {
     @IBOutlet weak var nameLabel: UILabel!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("ViewController 뷰가 로드 되었다.")
@@ -51,6 +50,16 @@ class ViewController: UIViewController, sendDataDelegate {
         
         self.navigationController?.pushViewController( viewController, animated: true)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // 자동으로 호출
+        // 전환하려는 인스턴스를 가져옴
+        // 다운 캐스팅
+        if let viewController = segue.destination as? suguePushViewController{
+            viewController.name = "유성"
+        }
+    }
+    
     func sendData(name: String) {
         self.nameLabel.text = name
         self.nameLabel.sizeToFit()
