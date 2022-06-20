@@ -7,8 +7,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, sendDataDelegate {
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("ViewController 뷰가 로드 되었다.")
@@ -29,6 +31,19 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
         print("ViewController 뷰가 사라졌다.")
     }
+    @IBAction func tabCodePresentButton(_ sender: UIButton) {
+        // as? 작업하면 해당 컨트롤러에 있는 상수에 접근할 수 있다.
+        guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "codePresentViewController") as? codePresentViewController else {
+            return
+        }
+        viewController.modalPresentationStyle = .fullScreen
+        viewController.name = "유성"
+        // 델리게이트를 위임받기
+        viewController.delegate = self
+        
+        
+        self.present(viewController, animated: true)
+    }
     @IBAction func tabCodePushButton(_ sender: UIButton) {
         guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "CodePushViewController") as? CodePushViewController else {return}
         
@@ -36,16 +51,9 @@ class ViewController: UIViewController {
         
         self.navigationController?.pushViewController( viewController, animated: true)
     }
-    @IBAction func tabCodePresentButton(_ sender: UIButton) {
-        // as? 작업하면 해당 컨트롤러에 있는 상수에 접근할 수 있다.
-        guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "codePresentViewController") as? codePresentViewController else {
-            return
-        }
-        viewController.modalPresentationStyle = .fullScreen
-        
-        viewController.name = "유성"
-        
-        self.present(viewController, animated: true)
+    func sendData(name: String) {
+        self.nameLabel.text = name
+        self.nameLabel.sizeToFit()
     }
     
 }
